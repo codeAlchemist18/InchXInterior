@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500&display=swap');
+
+
+@theme {
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+.dark {
+  /* Elegant Dark Color Scheme Overrides */
+  --color-slate-50: #0F0F11;    /* sub-inputs, inner tables */
+  --color-slate-100: #121214;   /* inner panels */
+  --color-slate-200: #1C1C1F;   /* borders, dividers */
+  --color-slate-300: #71717A;   /* disabled text */
+  --color-slate-400: #A1A1AA;   /* secondary text */
+  --color-slate-500: #71717A;   /* muted text */
+  --color-slate-600: #52525B;   /* dark elements border */
+  --color-slate-700: #3F3F46;   /* hover borders */
+  --color-slate-800: #1C1C1F;   /* dark card border */
+  --color-slate-900: #121214;   /* sidebar bg */
+  --color-slate-950: #18181B;   /* card bg */
+
+  color-scheme: dark;
+}
+
+/* Force body/root background in dark mode to be #0A0A0B */
+.dark body, 
+.dark #root,
+.dark .min-h-screen,
+.dark main {
+  background-color: #0A0A0B !important;
+}
+
+/* Ensure elements using bg-white in dark mode are styled as #18181B cards */
+.dark .bg-white {
+  background-color: #18181B !important;
+}
+
+/* Set specific colors for sidebar navigation container */
+.dark aside {
+  background-color: #121214 !important;
+  border-color: #1C1C1F !important;
+}
+
+/* Set specific colors for standard card containers */
+.dark .bg-white.border-slate-200\/80 {
+  background-color: #18181B !important;
+  border-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Set specific colors for mobile and desk headers */
+.dark header {
+  background-color: #0F0F11 !important;
+  border-color: #1C1C1F !important;
+}
+
+/* Elegant dark custom scrollbar */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1C1C1F;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #27272A;
+}
+
+/* Forced Light Theme for Invoice Paper Preview to simulate actual printed paper */
+.forced-light {
+  --color-slate-50: #f8fafc !important;
+  --color-slate-100: #f1f5f9 !important;
+  --color-slate-200: #e2e8f0 !important;
+  --color-slate-300: #cbd5e1 !important;
+  --color-slate-400: #94a3b8 !important;
+  --color-slate-500: #64748b !important;
+  --color-slate-600: #475569 !important;
+  --color-slate-700: #334155 !important;
+  --color-slate-800: #1e293b !important;
+  --color-slate-900: #0f172a !important;
+  --color-slate-950: #020617 !important;
+
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.dark .forced-light {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Ensure background colors inside the paper visualizer stay light */
+.forced-light .bg-slate-50 {
+  background-color: #f8fafc !important;
+}
+
+.forced-light .divide-slate-100 {
+  border-color: #f1f5f9 !important;
+}
+
+.forced-light .border-slate-100 {
+  border-color: #f1f5f9 !important;
+}
+
+.forced-light .border-slate-200 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Ensure font colors inside forced-light match light theme text */
+.forced-light .text-slate-900 { color: #0f172a !important; }
+.forced-light .text-slate-800 { color: #1e293b !important; }
+.forced-light .text-slate-700 { color: #334155 !important; }
+.forced-light .text-slate-600 { color: #475569 !important; }
+.forced-light .text-slate-500 { color: #64748b !important; }
+.forced-light .text-slate-400 { color: #94a3b8 !important; }
+

@@ -1,0 +1,6 @@
+{
+  "name": "INCHX INTERIO Financial Ledger",
+  "description": "Bespoke digital financial ledger and supplier management system for an interior design studio, replacing manual bookkeeping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
