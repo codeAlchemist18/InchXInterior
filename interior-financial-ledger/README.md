@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# INCHX Interior Financial Ledger
 
-# Run and deploy your AI Studio app
+A financial management system for interior design businesses.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/8fc07cdd-f838-4973-a9d0-aed99ebfaae7
+- Dashboard
+- Project Management
+- Client Management
+- Digital Ledger
+- Staff Management
+- Invoice Generator
+- Financial Reports
+- Company Settings
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React
+- TypeScript
+- Vite
 
+## Status
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Frontend complete.
+Backend integration in progress.
